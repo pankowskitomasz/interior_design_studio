@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "FugazOne";
+  src: url("../fonts/FugazOne-Regular.ttf");
+}
 /* line 1, ../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -179,7 +183,18 @@ body, html {
   background-size: cover;
 }
 
-/* line 4, ../sass/partials/_modules.scss */
+@media all and (orientation: portrait) {
+  /* line 4, ../sass/partials/_modules.scss */
+  .about-s3, .about-s4, .about-s5 {
+    background-position-x: center !important;
+  }
+
+  /* line 8, ../sass/partials/_modules.scss */
+  .contact-s2 {
+    background-position-x: center !important;
+  }
+}
+/* line 14, ../sass/partials/_modules.scss */
 .comingsoon-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -188,13 +203,13 @@ body, html {
   background-size: cover;
 }
 
-/* line 9, ../sass/partials/_modules.scss */
+/* line 19, ../sass/partials/_modules.scss */
 .contact-s3, .faq-s3, .offer-s3 {
   background-blend-mode: multiply !important;
   background-color: #999 !important;
 }
 
-/* line 15, ../sass/partials/_modules.scss */
+/* line 25, ../sass/partials/_modules.scss */
 .error-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -203,7 +218,12 @@ body, html {
   background-size: cover;
 }
 
-/* line 20, ../sass/partials/_modules.scss */
+/* line 29, ../sass/partials/_modules.scss */
+.index-s1 {
+  background-position-x: center !important;
+}
+
+/* line 33, ../sass/partials/_modules.scss */
 .privacy-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -212,85 +232,91 @@ body, html {
   background-size: cover;
 }
 
-/* line 26, ../sass/partials/_modules.scss */
+/* line 39, ../sass/partials/_modules.scss */
 .hover-underline:hover {
   text-decoration: underline !important;
 }
 
-/* line 32, ../sass/partials/_modules.scss */
+/* line 45, ../sass/partials/_modules.scss */
 .text-shadow {
   text-shadow: 1px 1px 3px #333;
 }
 
-/* line 36, ../sass/partials/_modules.scss */
+/* line 49, ../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "FugazOne";
+  letter-spacing: 1px;
+}
+
+/* line 53, ../sass/partials/_modules.scss */
 nav {
   z-index: 10;
 }
 
-/* line 39, ../sass/partials/_modules.scss */
+/* line 56, ../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 44, ../sass/partials/_modules.scss */
+  /* line 61, ../sass/partials/_modules.scss */
   .about-s1, .about-s3, .about-s4, .about-s5 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 45, ../sass/partials/_modules.scss */
+  /* line 62, ../sass/partials/_modules.scss */
   .about-s1 *, .about-s3 *, .about-s4 *, .about-s5 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
-  /* line 52, ../sass/partials/_modules.scss */
+  /* line 69, ../sass/partials/_modules.scss */
   .about-s1, .about-s4 {
     background-position: right !important;
   }
 
-  /* line 57, ../sass/partials/_modules.scss */
+  /* line 74, ../sass/partials/_modules.scss */
   .contact-s1, .contact-s2 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 58, ../sass/partials/_modules.scss */
+  /* line 75, ../sass/partials/_modules.scss */
   .contact-s1 *, .contact-s2 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
 
-  /* line 67, ../sass/partials/_modules.scss */
+  /* line 84, ../sass/partials/_modules.scss */
   .faq-s1, .faq-s3, .offer-s1, .offer-s3 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 68, ../sass/partials/_modules.scss */
+  /* line 85, ../sass/partials/_modules.scss */
   .faq-s1 *, .faq-s3 *, .offer-s1 *, .offer-s3 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
-  /* line 75, ../sass/partials/_modules.scss */
+  /* line 92, ../sass/partials/_modules.scss */
   .faq-s1, .offer-s1 {
     background-position: right !important;
   }
 
-  /* line 80, ../sass/partials/_modules.scss */
+  /* line 97, ../sass/partials/_modules.scss */
   .index-s1 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 81, ../sass/partials/_modules.scss */
+  /* line 98, ../sass/partials/_modules.scss */
   .index-s1 * {
     color: #fff !important;
     text-shadow: 1px 1px 3px #333;
   }
 
-  /* line 90, ../sass/partials/_modules.scss */
+  /* line 107, ../sass/partials/_modules.scss */
   .navbar-toggler {
     background-color: #666;
     border-color: #333;
   }
-  /* line 94, ../sass/partials/_modules.scss */
+  /* line 111, ../sass/partials/_modules.scss */
   .navbar-nav {
     background-color: #666;
     border: 1px solid #333;
